@@ -7,25 +7,120 @@
     <title>InkLink</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Times New Roman', Times, serif;
+      }
+
+      .navbar {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid var(--border);
+          padding: 16px;
+      }
+
+      .navbar a {
+          color: var(--link-color);
+          text-decoration: none;
+      }
+
+      .pages {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 24px;
+      }
+
+      .general {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 24px;
+      }
+
+      .logo {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+      }
+
+      .logo img {
+          height: 32px; /* Adjust the height as needed */
+      }
+
+      .main {
+          text-align: center;
+          margin-top: 48px;
+      }
+
+      .pricing-boxes {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 32px;
+      }
+
+      .pricing-box {
+          border: 2px solid #000;
+          border-radius: 8px;
+          padding: 16px;
+          width: 45%; /* Adjust the width as needed */
+      }
+
+      .pricing-box-header {
+          font-size: 24px;
+          margin-bottom: 8px;
+      }
+
+      .pricing-box-subheader {
+          font-size: 16px;
+      }
+
+      .btn-get-started {
+          text-decoration: none;
+          background-color: var(--btn-primary);
+          padding: 8px 16px;
+          color: white;
+          border-radius: 4px;
+          display: inline-block;
+          margin-top: 16px;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
-        <div class="pages">
-          <img src="assets/logo.png" alt="logo">
-          <a href="index.html">Home</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="teams.html">For Teams</a>
-          <a href="individuals.html">For Individuals</a>
-          <a href="mission.html">Mission</a>
+      <div class="pages">
+        <div class="logo">
+          <img src="assets/link.png" alt="logo">
+          <span>InkLink</span>
         </div>
-        <div class="general">
-          <a href="help.html">Help</a>
-          <a href="login.html">Login</a>
-          <a href="download.html" class="btn">Download</a>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="teams.html">For Teams</a>
+        <a href="individuals.html">For Individuals</a>
+        <a href="mission.html">Mission</a>
+      </div>
+      <div class="general">
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <a href="download.html" class="btn">Download</a>
+      </div>
+    </div>
+    <div class="main">
+      <h1>Our Pricing</h1>
+      <div class="pricing-boxes">
+        <div class="pricing-box">
+          <div class="pricing-box-header">Basic Plan</div>
+          <div class="pricing-box-subheader">Free</div>
+          <a href="#" class="btn-get-started">Get Started</a>
+        </div>
+        <div class="pricing-box">
+          <div class="pricing-box-header">Premium Plan</div>
+          <div class="pricing-box-subheader">$2.00 USD/month</div>
+          <a href="#" class="btn-get-started">Get Started</a>
         </div>
       </div>
-    <div class="main">
-        Pricing
     </div>
   </body>
 </html>
