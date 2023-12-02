@@ -10,10 +10,27 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
+    padding: 5px 0px 5px 0px;
 }
 
 .navbar a {
     color: var(--link-color);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover{
+    color: var(--btn-primary)
+}
+
+.pages a{
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.pages a.active-page {
+    border-bottom: 1.75px solid var(--link-color);
 }
 
 .pages {
@@ -21,7 +38,7 @@ body {
     justify-content: flex-start;
     width: 60%;
     align-items: center;
-    gap: 24px;
+    gap: 45px;
 }
 
 .general {
@@ -29,7 +46,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 24px;
+    gap: 36px;
+    padding-right:30px;
 }
 
 .head {
@@ -46,21 +64,20 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: -40px;
 }
 
 .title > .title {
-    font-size: 64px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.title > img {
-    margin: -12px 0;
+    font-size: 70px;
+    font-family:'Times New Roman', Times, serif;
+    padding-bottom: 18px;
+    padding-left: 12px;
 }
 
 .description {
-    width: 80%;
+    width: 65%;
     display: inline;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -84,6 +101,10 @@ body {
     background-color: var(--btn-primary-dark);
     color: white;
     border: none;
+}
+
+.signup:hover{
+    background-color: var(--btn-primary)
 }
 
 .signin {
@@ -110,8 +131,12 @@ body {
 .btn {
     text-decoration: none;
     background-color: var(--btn-primary);
-    padding: 4px 12px;
+    padding: 6px 30px;
     color: white !important;
+}
+
+.btn:hover{
+    background-color: var(--btn-primary-dark);
 }
 
 .copy {
@@ -156,7 +181,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid var(--border);
     padding-bottom: 16px;
 }
