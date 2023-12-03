@@ -20,7 +20,6 @@
             width: 100%;
             height: 60px;
             background-color: #000000;
-            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -44,7 +43,6 @@
             width: 100%;
             height: calc(100% - 60px);
             background-color: #ffffff;
-            color: #000000;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -83,6 +81,145 @@
         .container section a:hover {
             text-decoration: underline;
         }
+
+        .navbar {
+            background-color: #333; 
+            color: white;          
+            height: 60px;         
+            display: flex;         
+            align-items: center;   
+            justify-content: space-between; 
+            padding: 0 20px;       
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        }
+
+        .navbar .pages a {
+            color: white;          
+            text-decoration: none;
+            margin: 0 10px;       
+            font-weight: bold;     
+        }
+
+        .navbar .pages a:hover {
+            text-decoration: underline; 
+        }
+
+        .navbar .pages img {
+            height: 50px;         
+            margin-right: 20px;   
+        }
+
+        /* Active page styling */
+        .navbar .pages .active-page {
+            border-bottom: 2px solid white; 
+        }
+
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }   
+
+        h1, h2 {
+            font-weight: lighter;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+            background-color: #007bff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            height: 60px;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+        }
+
+        .container {
+            padding: 40px 20px; 
+        }
+
+        .container section {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #333;
+            color: #ffffff;
+            font-size: 0.8rem;
+        }       
+        
+        .welcome-header {
+            text-align: center; 
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+        }
+
+        .welcome-header h2 {
+            font-size: 2.5rem; 
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome-header p {
+            font-size: 1.2rem; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .contact-support {
+            font-size: 1.5em; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        .contact-support a {
+            color: #005A9C;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -98,15 +235,15 @@
             </div>
     </nav>
     <div class ="container">
-        <section>
+        <header class="welcome-header">
             <h2>Welcome to Our Help Page</h2>
             <p>If you need assistance or have any questions, you're in the right place. Here are some common topics and resources that might help you.</p>
-        </section>
+        </header>
         <section>
             <h2>Frequently Asked Questions (FAQs)</h2>
             <p>Find answers to the most commonly asked questions about our service.</p>
         </section>
-        <section>
+        <section class="contact-support">
             <h2>Contact Support</h2>
             <p>If you didn't find what you're looking for, our support team is here to help. You can contact us at <a href="mailto:support@example.com">support@example.com</a>.</p>
         </section>
@@ -115,6 +252,9 @@
             <p>Check out our <a href="#">user guide</a>, <a href="#">tutorial videos</a>, or <a href="#">community forum</a> for more detailed information and tips.</p>
         </section>
     </div>
+    <footer>
+        <p>&copy; 2023 InkLink. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
