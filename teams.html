@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="assets/link.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            padding: 16px;
+        }
 
+        .navbar a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .workplace {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 100px;
+            
+        }
+
+        .education {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 100px;
+        }
+
+        .pricing-box {
+            width: 300px;
+            height: 500px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .pricing-box-header {
+            text-align: center;
+        }
+
+        .pricing-box-subheader {
+            text-align: center;
+        }
+
+        .pricing-box-text {
+            text-align: center;
+        }
+
+        .pricing-box-features {
+            text-align: center;
+        }
+
+        .pricing-box-price {
+            text-align: center;
+        }
+
+
+        .pricing-box-button {
+            text-align: center;
+        }
+
+        .btn-get-started {
+            
+            /*fix position*/
+            position: relative;
+            top: -70%;
+            left: 0%;
+        }
+
+        .btn-get-started:hover {
+            background-color: var(--link-color-hover);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="pages">
+          <img src="assets/logo.png" alt="logo" style="margin-right: -40px;">
+          <a href="index.html" class="active-page">Home</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="teams.html">For Teams</a>
+          <a href="individuals.html">For Individuals</a>
+          <a href="mission.html">Mission</a>
+        </div>
+        <div class="general">
+          <a href="help.html">Help</a>
+          <a href="login.html">Login</a>
+          <a href="download.html" class="btn">Download</a>
+        </div>
+      </div>
+
+    <main>
+        <div class="workplace">
+            <div class="pricing-box">
+                <div class="pricing-box-header">
+                    <h2>Workplace</h2>
+                </div>
+                <div class="pricing-box-subheader">
+                    <h3>For teams and businesses</h3>
+                </div>
+                <div class="pricing-box-text">
+                    <p>Get your team on the same page with group video calls, screen sharing, and instant messaging.</p>
+                </div>
+                <div class="pricing-box-features">
+                    <ul>
+                        <li>Unlimited group video calls</li>
+                        <li>Unlimited screen sharing</li>
+                        <li>Unlimited file sharing</li>
+                        <li>Unlimited chat</li>
+                        <li>Unlimited integrations</li>
+                        <li>Unlimited support</li>
+                    </ul>
+                </div>
+                <div class="pricing-box-price">
+                    <h4>Free</h4>
+                </div>
+                <div class="pricing-box-button">
+                    <a href="#" class="btn-get-started">Get Started</a>
+                </div>
+
+        </div>
+        <div class="education">
+
+
+    </main>
+</body>
+</html>
