@@ -58,9 +58,9 @@
       }
 
       .pricing-container {
-        background-color: rgba(125, 125, 247, 0.5); /* Adjust the alpha value as needed */
-        padding: 20px; /* Adjust the padding as needed */
-        border-radius: 16px; /* Adjust the border-radius as needed */
+        background-color: rgba(125, 125, 247, 0.5);
+        padding: 20px; 
+        border-radius: 16px; 
       }
 
 
@@ -75,7 +75,8 @@
           border: 8px solid #505F98;
           border-radius: 30px;
           padding: 20px;
-          width: 37%; 
+          width: 30%; 
+          opacity:1.0;
           background: linear-gradient(rgba(17, 27, 71, 0.7), rgba(125, 125, 247, 0.5));
           background-position:center center;
           color: white;
@@ -100,20 +101,10 @@
           
       }
 
-      .title {
-        margin-top: 4px;
-        justify-content: space-evenly;
-        margin-bottom: 5px;
-        border-radius: 30px;
-        border: 5px solid #505F98; 
-        padding: 5px; 
-        display: inline-block;
-}
-
-
       .btn-get-started {
           text-decoration: none;
           background-color: grey;
+          opacity:1.0;
           background-size: cover;
           padding: 20px 10px;
           color: white;
@@ -121,6 +112,10 @@
           display: inline-block;
           font-size: 20px;
           margin-top: 20px;
+      }
+
+      .checkmark {
+        margin-right: 8px; /* Adjust the spacing as needed */
       }
     </style>
   </head>
@@ -141,31 +136,32 @@
       </div>
     </div>
     <div class="main">
+      <div class="head">
       <div class="title">
-        <span class="title">Our Pricing and Plans</span>
+        <img src="assets/link.png" />
+        <span class="title">Our Plans and Pricing</span>
       </div>
         <div class="pricing-boxes">
           <div class="pricing-box">
             <div class="pricing-box-header">Basic Plan</div>
             <div class="pricing-box-subheader">Free</div>
-            <div class="pricing-box-text">Simple, easy to use, and completely free!</div>
-            <div class="pricing-box-text">Accessible text-to-audio feature at no extra cost</div>
-            <div class="pricing-box-text">Basic note functions and features included!</div>
-            <div class="pricing-box-text">Access your notes from various devices with seamless synchronization</div>
-            <div class="pricing-box-text">Allow users to set their preferred language for a personalized experience.</div>
-            <div class="pricing-box-text">Implement automatic captioning for audio and video content</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Accessible text-to-audio feature at no extra cost</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Access your notes from various devices with seamless synchronization</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Allow users to set their preferred language for a personalized experience.</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Implement automatic captioning for audio and video content</div>
             <a href="#" class="btn-get-started">Get Started Today!</a>
           </div>
           <div class="pricing-box">
             <div class="pricing-box-header">Premium Plan</div>
             <div class="pricing-box-subheader">$4.00 USD/month</div>
-            <div class="pricing-box-text">Provide premium users with a priority support channel for quicker assistance.</div>
-            <div class="pricing-box-text">Offer premium users access to exclusive workshops or webinars on effective note-taking and productivity</div>
-            <div class="pricing-box-text">Connect the note-taking app with popular calendar applications for seamless scheduling</div>
-            <div class="pricing-box-text">Support advanced multimedia embedding, such as videos, interactive elements, and diagrams.</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Provide premium users with a priority support channel for quicker assistance.</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Offer premium users access to exclusive workshops or webinars on effective note-taking and productivity</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Support advanced multimedia embedding, such as videos, interactive elements, and diagrams.</div>
             <a href="#" class="btn-get-started">Get Started Today!</a>
           </div>
         </div>
+        <img src="assets/splash-img.png" class="splash" />
     </div>
+  </div>
   </body>
 </html>
