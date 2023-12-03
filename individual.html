@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
+              :root {
+            --link-color: #005A9C;
+            --link-color-hover: #00376b;
+            --border: #ddd;
+            --background-color: #eef2f7; /* Soft blue background for a soothing effect */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
       .inv-header{
-        padding:20px 20px 10px 20px;
+        padding:20px 20px 0px 20px;
         font-size:x-large;
         text-align: center;
       }
@@ -25,9 +39,9 @@
 
       .inv-point1-info {
         max-width: 800px;
-        background-color: #efefef;
+        background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         color: #111b47;
-        box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
         border-top: 1px solid black;
         border-bottom:  1px solid black;
         display: flex;
@@ -56,9 +70,9 @@
 
       .inv-point2-info {
         max-width: 750px;
-        background-color: #efefef;
+        background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         color: #111b47;
-        box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         display: flex;

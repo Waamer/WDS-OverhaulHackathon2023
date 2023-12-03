@@ -8,54 +8,20 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
-      body {
-        margin: 0;
-        margin-bottom: 200px;
-        padding: 0;
-        font-family: 'Times New Roman', Times, serif;
-    }
+    :root {
+            --link-color: #005A9C;
+            --link-color-hover: #00376b;
+            --border: #ddd;
+            --background-color: #eef2f7; /* Soft blue background for a soothing effect */
+        }
 
-      .navbar {
-          display: flex;
-          justify-content: space-between;
-          border-bottom: 1px solid var(--border);
-          padding: 16px;
-      }
-
-      .navbar a {
-          color: var(--link-color);
-          text-decoration: none;
-      }
-
-      .pages {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          gap: 24px;
-      }
-
-      .general {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          gap: 24px;
-      }
-
-      .logo {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-      }
-
-      .logo img {
-          height: 32px; 
-      }
-
-      .main {
-          text-align: center;
-          font-size: 50px;
-          margin-top: 10px;
-      }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
 
       .pricing-container {
         background-color: rgba(125, 125, 247, 0.5);
@@ -67,51 +33,50 @@
       .pricing-boxes {
           display: flex;
           justify-content:space-around;
-          margin-top: 100px;
+          margin-top: 60px;
           
       }
 
       .pricing-box {
-          border: 8px solid #505F98;
-          border-radius: 30px;
-          padding: 20px;
-          width: 30%; 
+          border: 4px solid #505F98;
+          border-radius: 20px;
+          padding: 40px 40px 40px 40px;
+          max-width:300px; 
+          margin: 0px 20px 40px 20px;
           opacity:1.0;
-          background: linear-gradient(rgba(17, 27, 71, 0.7), rgba(125, 125, 247, 0.5));
+          background: linear-gradient(#505F98, rgba(125, 125, 247, 1));
           background-position:center center;
           color: white;
       }
 
       .pricing-box-header {
-          font-size: 30px;
+          font-size: 40px;
           margin-bottom: 10px;
-          font-weight:910; /*quite bold */
+          font-weight:700; /*quite bold */
+          text-align: center;
       }
 
       .pricing-box-subheader {
-          font-size: 20px;
+          font-size: 24px;
           font-weight:600; /*quite bold */
+          text-align: center;
       }
 
       .pricing-box-text{
           margin-top:16px;
-          font-size: 15px;
+          font-size: 17px;
           color: white;
           font-weight:600; /*quite bold */
           
       }
 
-      .btn-get-started {
-          text-decoration: none;
-          background-color: grey;
-          opacity:1.0;
-          background-size: cover;
-          padding: 20px 10px;
-          color: white;
-          border-radius: 4px;
-          display: inline-block;
-          font-size: 20px;
-          margin-top: 20px;
+      .started {
+        width:100%;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #505F98;
       }
 
       .checkmark {
@@ -122,9 +87,9 @@
   <body>
     <div class="navbar">
       <div class="pages">
-        <img src="assets/logo.png" alt="logo" style="margin-right: -40px;">
-        <a href="index.html" class="active-page">Home</a>
-        <a href="pricing.html">Pricing</a>
+        <img src="assets/logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="pricing.html" class="active-page">Pricing</a>
         <a href="teams.html">For Teams</a>
         <a href="individuals.html">For Individuals</a>
         <a href="mission.html">Mission</a>
@@ -136,31 +101,31 @@
       </div>
     </div>
     <div class="main">
-      <div class="head">
+      <div class="head" style="margin: 40px 0 0 48px; width:90%;">
       <div class="title">
         <img src="assets/link.png" />
-        <span class="title">Our Plans and Pricing</span>
+        <span class="title">Our Plans/Pricing</span>
       </div>
         <div class="pricing-boxes">
           <div class="pricing-box">
             <div class="pricing-box-header">Basic Plan</div>
             <div class="pricing-box-subheader">Free</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Accessible text-to-audio feature at no extra cost</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Access your notes from various devices with seamless synchronization</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Allow users to set their preferred language for a personalized experience.</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Implement automatic captioning for audio and video content</div>
-            <a href="#" class="btn-get-started">Get Started Today!</a>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Free text-to-audio feature</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Cross-device note access with seamless sync</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Personalized language preference settings</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span> Auto-captioning for audio and video content</div>
+            <button href="#" class="btn started">Get Started Today!</button>
           </div>
           <div class="pricing-box">
             <div class="pricing-box-header">Premium Plan</div>
             <div class="pricing-box-subheader">$4.00 USD/month</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Provide premium users with a priority support channel for quicker assistance.</div>
-            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Offer premium users access to exclusive workshops or webinars on effective note-taking and productivity</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Priority support channel for quicker assistance.</div>
+            <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Access to exclusive workshops or webinars on effective note-taking and productivity</div>
             <div class="pricing-box-text"><span class="checkmark">&#10003;</span>Support advanced multimedia embedding, such as videos, interactive elements, and diagrams.</div>
-            <a href="#" class="btn-get-started">Get Started Today!</a>
+            <button href="#" class="btn started">Get Started Today!</button>
           </div>
         </div>
-        <img src="assets/splash-img.png" class="splash" />
+        <img src="assets/splash-img.png" class="splash"/>
     </div>
   </div>
   </body>

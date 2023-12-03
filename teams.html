@@ -8,8 +8,8 @@
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
         :root {
-            --link-color: #005A9C;
-            --link-color-hover: #00376b;
+            --link-color: #7D7DF7;
+            --link-color-hover: #111b47;
             --border: #ddd;
             --background-color: #eef2f7; /* Soft blue background for a soothing effect */
         }
@@ -22,14 +22,18 @@
             line-height: 1.6;
         }
 
-    
+        .inv-header{
+        font-size:x-large;
+        text-align: center;
+        padding: 20px 0;
+      }
 
         .main-section {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 40px; /* Add gap for spacing between boxes */
-            padding: 80px 0; /* More vertical padding for better spacing */
+            padding-bottom:60px; /* More vertical padding for better spacing */
         }
 
         .pricing-box {
@@ -101,10 +105,10 @@
 <body>
     <div class="navbar">
         <div class="pages">
-          <img src="assets/logo.png" alt="logo" style="margin-right: -40px;">
-          <a href="index.html" class="active-page">Home</a>
+          <img src="assets/logo.png" alt="logo"">
+          <a href="index.html">Home</a>
           <a href="pricing.html">Pricing</a>
-          <a href="teams.html">For Teams</a>
+          <a href="teams.html" class="active-page">For Teams</a>
           <a href="individuals.html">For Individuals</a>
           <a href="mission.html">Mission</a>
         </div>
@@ -114,6 +118,10 @@
           <a href="download.html" class="btn">Download</a>
         </div>
       </div>
+
+      <div class="inv-header">
+        <h1>Why use InkLink with a Team?</h1>
+    </div>
 
     <main class="main-section">
         <div class="pricing-box">
@@ -128,8 +136,7 @@
                 <li>Unlimited integrations</li>
                 <li>Unlimited support</li>
             </ul>
-            <h4>Free</h4>
-            <a href="#" class="btn-get-started">Get Started</a>
+            <a href="pricing.html" class="btn-get-started">Get Started</a>
         </div>
 
         <div class="pricing-box">
@@ -144,8 +151,7 @@
                 <li>24/7 learning support</li>
                 <li>Resource sharing</li>
             </ul>
-            <h4>Free</h4>
-            <a href="#" class="btn-get-started">Get Started</a>
+            <a href="pricing.html" class="btn-get-started">Get Started</a>
         </div>
     </main>
 

@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
-        body {
-            margin: 0;
-            margin-bottom: 800px;
-            padding: 0;
-        }
 
         .mission-background {
             position: fixed;
@@ -22,7 +17,7 @@
             height: 100%;
             background: url('assets/splash-img.png') center/cover no-repeat;
             background-position: center ;
-            opacity: 0.25;
+            opacity: 1;
             z-index: -1;
         }
 
@@ -32,41 +27,41 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: lightgray;
-            border: 15px solid black;
-            padding: 100px;
+            border: 10px solid black;
+            padding: 80px 100px 40px 100px;
             max-width: 1000px;
             width: 100%;
             margin-top: 50px;
             margin-bottom: 100px;
             text-align: center;
-            border-radius: 40px;
-            font-family: 'Times New Roman', Times, serif;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 60px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
 
         .mission-title {
-            font-size: 50px;
+            font-size: 80px;
             margin-top: 0px;
             margin-bottom: 16px;
-            font-family:'Times New Roman', Times, serif;
         }
 
         .mission-description {
             font-size: 20px;
-            line-height: 2.0;
-            margin-bottom:50px;
-            font-family:'Times New Roman', Times, serif;
+            font-weight: 500;
+            line-height: 1.9;
+            margin-bottom:40px;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="pages">
-          <img src="assets/logo.png" alt="logo" style="margin-right: -40px;">
-          <a href="index.html" class="active-page">Home</a>
+          <img src="assets/logo.png" alt="logo">
+          <a href="index.html">Home</a>
           <a href="pricing.html">Pricing</a>
           <a href="teams.html">For Teams</a>
           <a href="individuals.html">For Individuals</a>
-          <a href="mission.html">Mission</a>
+          <a href="mission.html" class="active-page">Mission</a>
         </div>
         <div class="general">
           <a href="help.html">Help</a>
@@ -86,7 +81,7 @@
              Stephanie envisions a warm and inviting website with a simple design, prioritizing accessibility 
              considerations for all users.
         </p>
-        <img src="assets/link.png" alt="logo" style="width: 150px; height: auto;">
+        <img src="assets/link.png" alt="logo" style="width: 150px; height: auto; ">
     </div>
 
     <span class="copy">Copyright © 2023, Western Developers Society</span>

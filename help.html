@@ -28,14 +28,6 @@
             z-index: 1;
         }
 
-        .navbar h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 24px;
-            font-weight: 500;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
         .container {
             position: absolute;
             top: 60px;
@@ -82,26 +74,11 @@
             text-decoration: underline;
         }
 
-        .navbar {
-            background-color: #333; 
-            color: white;          
-            height: 60px;         
-            display: flex;         
-            align-items: center;   
-            justify-content: space-between; 
-            padding: 0 20px;       
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-        }
-
         .navbar .pages a {
             color: white;          
             text-decoration: none;
             margin: 0 10px;       
             font-weight: bold;     
-        }
-
-        .navbar .pages a:hover {
-            text-decoration: underline; 
         }
 
         .navbar .pages img {
@@ -143,6 +120,7 @@
 
         .navbar a:hover {
             background-color: white;
+            color:black;
         }
 
         .container {
@@ -211,12 +189,13 @@
     <nav class="navbar">
         <div class="navbar">
             <div class="pages">
-              <img src="assets/logo.png" alt="logo" style="margin-right: -40px;">
-              <a href="index.html" class="active-page">Home</a>
+              <img src="assets/logo.png" alt="logo"">
+              <a href="index.html">Home</a>
               <a href="pricing.html">Pricing</a>
               <a href="teams.html">For Teams</a>
               <a href="individuals.html">For Individuals</a>
               <a href="mission.html">Mission</a>
+              <a href="help.html" class="active-page">Help</a>
             </div>
     </nav>
     <div class ="container">
