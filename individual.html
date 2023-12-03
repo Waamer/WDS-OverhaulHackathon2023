@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InkLink | Individuals</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/link.png" type="image/x-icon">
+    <style>
+      .inv-header{
+        padding:20px 20px 10px 20px;
+        font-size:x-large;
+        text-align: center;
+      }
+      .inv-point1 {
+        max-width: 100%; 
+        margin: 40px auto;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-end; 
+        box-sizing: border-box;
+      }
 
+      .inv-point1-info {
+        max-width: 800px;
+        background-color: #ffffff;
+        box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 0px 80px 0px 40px;
+        box-sizing: border-box;
+      }
+
+      .inv-point1-img { /*Image by Freepik*/
+        width: 550px;
+        height: auto;
+        border-radius: 100px 0px 0px 100px;
+      }
+
+      .inv-point2{
+        max-width: 100%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-start;
+        box-sizing: border-box; 
+      }
+
+      .inv-point2-info {
+        max-width: 750px;
+        background-color: #ffffff;
+        box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        padding: 0px 40px 0px 40px;
+      }
+
+      .inv-point2-img{ /*Image by Drazen Zigic (Freepik)*/
+        width:550px;
+        height: auto;
+        border-radius: 0px 100px 100px 0px;
+      }
+        @media (max-width: 1300px) {
+        .inv-point2-img {
+            border-radius: 0;
+          }
+          .inv-point1-img {
+            border-radius: 0;
+          }
+        }
+
+        .get-started-container {
+        text-align: center; 
+        margin: 60px 20px 80px 20px;
+      }
+
+      .btn.get-started {
+        font-size: larger; 
+        padding: 15px 30px;
+        border-radius: 8px;
+      }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="navbar">
+          <div class="pages">
+            <img src="assets/logo.png" alt="logo">
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="teams.html">For Teams</a>
+            <a href="individuals.html" class="active-page">For Individuals</a>
+            <a href="mission.html">Mission</a>
+          </div>
+          <div class="general">
+            <a href="help.html">Help</a>
+            <a href="login.html">Login</a>
+            <a href="download.html" class="btn">Download</a>
+          </div>
+        </div>
+        <div class="main">
+                <div class="inv-header">
+                    <h1>Why use InkLink as a Individual?</h1>
+                </div>
+                <div class="inv-point1">
+                  <img src="assets/little-girl-listening-music-through-headphones.jpg" class="inv-point1-img">
+                  <div class="inv-point1-info">
+                    <h2>Caters to those with Learning Disabilities</h2>
+                    <p>InkLink is built with upmost care for our customers, that's why we made sure to include features such as</p>
+                    <ul>
+                      <li>Text to speech for Visual Disabilities</li>
+                      <li>In Built Note translator for Lanugage Barriers</li>
+                      <li>And More!</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="inv-point2">
+                  <div class="inv-point2-info">
+                    <h2 style="text-align: right;">User-Friendliness and Convenience</h2>
+                    <p style="text-align: right; font-size: large;">Our simple/clean design makes sure none of our users get overwhelmed by lots of unneeded clutter. Allowing you to spend more time note taking and less time worrying</>
+                  </div>
+                  <img src="assets/smiling-man-surfing-net-laptop-while-drinking-coffee-bar.jpg" class="inv-point2-img">
+                </div>
+                <div class="get-started-container">
+                  <a href="pricing.html" class="btn get-started">Get Started</a>
+                </div>
+        </div>
+        <span class="copy">Copyright © 2023, Western Developers Society</div>
+    </main>
+	<script src="script.js"></script>
+</body>
+</html>
