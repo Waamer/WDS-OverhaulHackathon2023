@@ -9,9 +9,10 @@
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
       body {
-          margin: 0;
-          padding: 0;
+          margin:0px;
+          padding:0;
           font-family: 'Times New Roman', Times, serif;
+          background-color: white;
       }
 
       .navbar {
@@ -47,44 +48,55 @@
       }
 
       .logo img {
-          height: 32px; /* Adjust the height as needed */
+          height: 32px; 
       }
 
       .main {
           text-align: center;
-          margin-top: 48px;
+          font-size: 50px;
+          margin-top: 10px;
       }
 
       .pricing-boxes {
           display: flex;
-          justify-content: space-around;
-          margin-top: 32px;
+          justify-content:space-around;
+          margin-top: 100px;
+          
       }
 
       .pricing-box {
-          border: 2px solid #000;
-          border-radius: 8px;
-          padding: 16px;
-          width: 45%; /* Adjust the width as needed */
+          border: 8px solid #7D7DF7;
+          border-radius: 30px;
+          padding: 20px;
+          width: 27%; 
+          background-image: url('assets/splash-img.png');
+          background-color: rgba(125, 125, 247, 0.2); 
+          background-position:center center;
       }
 
       .pricing-box-header {
-          font-size: 24px;
-          margin-bottom: 8px;
+          font-size: 30px;
+          margin-bottom: 10px;
       }
 
       .pricing-box-subheader {
-          font-size: 16px;
+          font-size: 20px;
+      }
+
+      .pricing-box-text{
+          margin-top:16px;
+          font-size: 15px;
       }
 
       .btn-get-started {
           text-decoration: none;
-          background-color: var(--btn-primary);
-          padding: 8px 16px;
+          background-color: grey;
+          background-size: cover;
+          padding: 20px 10px;
           color: white;
           border-radius: 4px;
           display: inline-block;
-          margin-top: 16px;
+          font-size: 20px;
       }
     </style>
   </head>
@@ -110,11 +122,19 @@
         <div class="pricing-box">
           <div class="pricing-box-header">Basic Plan</div>
           <div class="pricing-box-subheader">Free</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
           <a href="#" class="btn-get-started">Get Started</a>
         </div>
         <div class="pricing-box">
           <div class="pricing-box-header">Premium Plan</div>
           <div class="pricing-box-subheader">$2.00 USD/month</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
+          <div class="pricing-box-text">Feature 1</div>
           <a href="#" class="btn-get-started">Get Started</a>
         </div>
       </div>

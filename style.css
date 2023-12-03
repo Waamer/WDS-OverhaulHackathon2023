@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 body {
     --btn-primary: #7D7DF7;
     --border: #C0BFBF;
     --link-color: #505F98;
     --btn-primary-dark: #111b47;
     --btn-secondary: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+    /*NAVBAR STYLES*/
 
 .navbar {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
     padding: 5px 0px 5px 0px;
+    background-color: #ffffff;
 }
 
 .navbar a {
     color: var(--link-color);
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 .navbar a:hover{
@@ -49,6 +58,9 @@ body {
     gap: 36px;
     padding-right:30px;
 }
+
+    /*NAVBAR STYLES END*/
+    /*HOME PAGE STYLES*/
 
 .head {
     margin: 128px 0 0 48px;
@@ -101,6 +113,7 @@ body {
     background-color: var(--btn-primary-dark);
     color: white;
     border: none;
+    transition: background 0.2s ease;
 }
 
 .signup:hover{
@@ -139,6 +152,9 @@ body {
     background-color: var(--btn-primary-dark);
 }
 
+    /*HOME STYLES END*/
+
+
 .copy {
     position: fixed;
     bottom: 12px;
@@ -146,23 +162,91 @@ body {
     color: grey;
 }
 
+    /*LOGIN STYLES START*/
+
+.main-login{
+    margin: 128px auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signIn-info > h1{
+    margin-bottom:-15px;
+    font-size: 4.2vh;
+}
+
 .login_form {
-    margin: 64px auto;
+    padding: 20px 40px 30px 40px;
     width: 50vh;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    background-color: #bdbcbc;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.login_form:hover{
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .login_form > input {
     width: 100%;
-    height: 64px;
+    height: 50px;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
+    border: 0px;
 }
+
+.form-input{
+    background-color:aliceblue;
+    border-radius: 5px;
+}
+
+.form-submit{
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.form-submit:hover{
+    background-color:#7D7DF7;
+    color:aliceblue;
+    border: 0.5px solid aliceblue;
+}
+
+.no-account{
+    width: 96%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: -30px;
+    color:black;
+    font-weight: bold;
+}
+
+.no-account > a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    font-size:large;
+    transition: color 0.2s ease;
+}
+
+.no-account > a:hover{
+    color:black;
+}
+
+    /*LOGIN STYLES END*/
 
 .notes_main {
     display: flex;
