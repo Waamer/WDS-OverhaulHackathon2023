@@ -9,11 +9,14 @@
     <link rel="icon" href="assets/link.png" type="image/x-icon">
     <style>
       body {
-          margin:0px;
-          padding:0;
-          font-family: 'Times New Roman', Times, serif;
-          background-color: white;
-      }
+        margin: 0;
+        margin-bottom: 200px;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        background: url('assets/splash-img.png') bottom/cover no-repeat;
+    }
+
+
 
       .navbar {
           display: flex;
@@ -57,6 +60,13 @@
           margin-top: 10px;
       }
 
+      .pricing-container {
+        background-color: rgba(125, 125, 247, 0.5); /* Adjust the alpha value as needed */
+        padding: 20px; /* Adjust the padding as needed */
+        border-radius: 16px; /* Adjust the border-radius as needed */
+      }
+
+
       .pricing-boxes {
           display: flex;
           justify-content:space-around;
@@ -65,27 +75,38 @@
       }
 
       .pricing-box {
-          border: 8px solid #7D7DF7;
+          border: 8px solid #505F98;
           border-radius: 30px;
           padding: 20px;
-          width: 27%; 
-          background-image: url('assets/splash-img.png');
-          background-color: rgba(125, 125, 247, 0.2); 
+          width: 37%; 
+          background: linear-gradient(rgba(17, 27, 71, 0.7), rgba(125, 125, 247, 0.5));
           background-position:center center;
+          color: white;
       }
 
       .pricing-box-header {
           font-size: 30px;
           margin-bottom: 10px;
+          font-weight:910; /*quite bold */
       }
 
       .pricing-box-subheader {
           font-size: 20px;
+          font-weight:600; /*quite bold */
       }
 
       .pricing-box-text{
           margin-top:16px;
           font-size: 15px;
+          color: white;
+          font-weight:600; /*quite bold */
+          
+      }
+
+      .title {
+        margin-top: 40px;
+        justify-content:space-evenly;
+        margin-bottom: 5px;
       }
 
       .btn-get-started {
@@ -97,6 +118,7 @@
           border-radius: 4px;
           display: inline-block;
           font-size: 20px;
+          margin-top: 20px;
       }
     </style>
   </head>
@@ -117,27 +139,31 @@
       </div>
     </div>
     <div class="main">
-      <h1>Our Pricing</h1>
-      <div class="pricing-boxes">
-        <div class="pricing-box">
-          <div class="pricing-box-header">Basic Plan</div>
-          <div class="pricing-box-subheader">Free</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <a href="#" class="btn-get-started">Get Started</a>
-        </div>
-        <div class="pricing-box">
-          <div class="pricing-box-header">Premium Plan</div>
-          <div class="pricing-box-subheader">$2.00 USD/month</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <div class="pricing-box-text">Feature 1</div>
-          <a href="#" class="btn-get-started">Get Started</a>
-        </div>
+      <div class="title">
+        <span class="title">Our Pricing and Plans</span>
       </div>
+        <div class="pricing-boxes">
+          <div class="pricing-box">
+            <div class="pricing-box-header">Basic Plan</div>
+            <div class="pricing-box-subheader">Free</div>
+            <div class="pricing-box-text">Simple, easy to use, and completely free!</div>
+            <div class="pricing-box-text">Accessible text-to-audio feature at no extra cost</div>
+            <div class="pricing-box-text">Basic note functions and features included!</div>
+            <div class="pricing-box-text">Access your notes from various devices with seamless synchronization</div>
+            <div class="pricing-box-text">Allow users to set their preferred language for a personalized experience.</div>
+            <div class="pricing-box-text">Implement automatic captioning for audio and video content</div>
+            <a href="#" class="btn-get-started">Get Started Today!</a>
+          </div>
+          <div class="pricing-box">
+            <div class="pricing-box-header">Premium Plan</div>
+            <div class="pricing-box-subheader">$4.00 USD/month</div>
+            <div class="pricing-box-text">Provide premium users with a priority support channel for quicker assistance.</div>
+            <div class="pricing-box-text">Offer premium users access to exclusive workshops or webinars on effective note-taking and productivity</div>
+            <div class="pricing-box-text">Connect the note-taking app with popular calendar applications for seamless scheduling</div>
+            <div class="pricing-box-text">Support advanced multimedia embedding, such as videos, interactive elements, and diagrams.</div>
+            <a href="#" class="btn-get-started">Get Started Today!</a>
+          </div>
+        </div>
     </div>
   </body>
 </html>
