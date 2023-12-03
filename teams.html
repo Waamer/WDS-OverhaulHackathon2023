@@ -3,89 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teams Page</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <style>
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--border);
-            padding: 16px;
+        :root {
+            --link-color: #005A9C;
+            --link-color-hover: #00376b;
+            --border: #ddd;
+            --background-color: #eef2f7; /* Soft blue background for a soothing effect */
         }
 
-        .navbar a {
-            color: var(--link-color);
-            text-decoration: none;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            line-height: 1.6;
         }
 
-        .workplace {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            margin-top: 100px;
-            
-        }
+    
 
-        .education {
+        .main-section {
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: 24px;
-            margin-top: 100px;
+            flex-wrap: wrap;
+            gap: 40px; /* Add gap for spacing between boxes */
+            padding: 80px 0; /* More vertical padding for better spacing */
         }
 
         .pricing-box {
-            width: 300px;
-            height: 500px;
+            width: 400px; /* Increased width for better presence */
+            min-height: 550px; /* Adjusted height */
             background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 24px;
-            padding: 0 20px;
+            justify-content: space-between; /* Distribute space evenly */
+            gap: 16px;
+            padding: 40px;
             box-sizing: border-box;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            text-align: center; /* Center text for all content */
         }
 
-        .pricing-box-header {
-            text-align: center;
-        }
-
-        .pricing-box-subheader {
-            text-align: center;
-        }
-
-        .pricing-box-text {
-            text-align: center;
-        }
-
-        .pricing-box-features {
-            text-align: center;
-        }
-
-        .pricing-box-price {
-            text-align: center;
-        }
-
-
-        .pricing-box-button {
-            text-align: center;
+        .pricing-box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
         }
 
         .btn-get-started {
-            
-            /*fix position*/
-            position: relative;
-            top: -70%;
-            left: 0%;
+            background-color: var(--link-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px; /* Larger padding for the button */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1em; /* Adjust font size as needed */
+            display: inline-block; /* Align button properly */
+            margin-top: 20px; /* Space before the button */
         }
 
         .btn-get-started:hover {
             background-color: var(--link-color-hover);
+        }
+
+        h2, h3, p, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: var(--link-color); /* Match the brand color for headers */
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: '• ';
+            color: var(--link-color); /* Bullet points color */
+            font-size: 1.2em;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            text-align: left; /* Align bullets to the left */
         }
 
     </style>
@@ -107,39 +115,41 @@
         </div>
       </div>
 
-    <main>
-        <div class="workplace">
-            <div class="pricing-box">
-                <div class="pricing-box-header">
-                    <h2>Workplace</h2>
-                </div>
-                <div class="pricing-box-subheader">
-                    <h3>For teams and businesses</h3>
-                </div>
-                <div class="pricing-box-text">
-                    <p>Get your team on the same page with group video calls, screen sharing, and instant messaging.</p>
-                </div>
-                <div class="pricing-box-features">
-                    <ul>
-                        <li>Unlimited group video calls</li>
-                        <li>Unlimited screen sharing</li>
-                        <li>Unlimited file sharing</li>
-                        <li>Unlimited chat</li>
-                        <li>Unlimited integrations</li>
-                        <li>Unlimited support</li>
-                    </ul>
-                </div>
-                <div class="pricing-box-price">
-                    <h4>Free</h4>
-                </div>
-                <div class="pricing-box-button">
-                    <a href="#" class="btn-get-started">Get Started</a>
-                </div>
-
+    <main class="main-section">
+        <div class="pricing-box">
+            <h2>Workplace</h2>
+            <h3>For teams and businesses</h3>
+            <p>Get your team on the same page with group video calls, screen sharing, and instant messaging.</p>
+            <ul>
+                <li>Unlimited group video calls</li>
+                <li>Unlimited screen sharing</li>
+                <li>Unlimited file sharing</li>
+                <li>Unlimited chat</li>
+                <li>Unlimited integrations</li>
+                <li>Unlimited support</li>
+            </ul>
+            <h4>Free</h4>
+            <a href="#" class="btn-get-started">Get Started</a>
         </div>
-        <div class="education">
 
-
+        <div class="pricing-box">
+            <h2>Education</h2>
+            <h3>For schools and universities</h3>
+            <p>Empower your education with tools that facilitate teaching and learning.</p>
+            <ul>
+                <li>Virtual classrooms</li>
+                <li>Homework collaboration</li>
+                <li>Unlimited course material access</li>
+                <li>Student-teacher forums</li>
+                <li>24/7 learning support</li>
+                <li>Resource sharing</li>
+            </ul>
+            <h4>Free</h4>
+            <a href="#" class="btn-get-started">Get Started</a>
+        </div>
     </main>
+
+    <!-- Include your footer here -->
+
 </body>
 </html>
